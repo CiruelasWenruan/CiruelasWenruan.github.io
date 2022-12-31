@@ -43,12 +43,7 @@
         <img style="width:64px;margin-bottom:36px " src="files/boom.png">
     </div>
 -->
-<script>
-setTimeout(() => {
-                start()
-                fireworks();
-            }, 1600)
-</script>
+
     <div style="height: 0; width: 0; position: absolute; visibility: hidden;">
         <svg xmlns="http://www.w3.org/2000/svg">
             <symbol id="icon-play" viewBox="0 0 24 24">
@@ -178,8 +173,6 @@ setTimeout(() => {
         }
 
         document.body.addEventListener('touchstart', musicInBrowserHandler);
-        $('#yhBtn').click(e => {
-            $('#yhBtn').hide()
             setTimeout(() => {
                 start()
                 fireworks();
@@ -194,7 +187,6 @@ setTimeout(() => {
             console.log(updateConfig({
                 autoLaunch: true
             }));
-        })
 
         function fireworks() {
             $('.page_one').addClass('hide');
