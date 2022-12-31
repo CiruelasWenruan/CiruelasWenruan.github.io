@@ -37,11 +37,18 @@
 
     <audio id="audioDom" src="https://download.kstore.space/download/2719/newyear/files/audio.mp3" preload="auto" loop="loop"></audio>
 
+<!--
     <div id="yhBtn" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:999;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff ; font-size:20px    ">
         <p>💥点击我(如果点击没反应请等几秒再点awa)💥</p>
         <img style="width:64px;margin-bottom:36px " src="files/boom.png">
     </div>
-
+-->
+<script>
+setTimeout(() => {
+                start()
+                fireworks();
+            }, 1600)
+</script>
     <div style="height: 0; width: 0; position: absolute; visibility: hidden;">
         <svg xmlns="http://www.w3.org/2000/svg">
             <symbol id="icon-play" viewBox="0 0 24 24">
@@ -169,6 +176,7 @@
                 musicPlay(true)
             }, 0)
         }
+
         document.body.addEventListener('touchstart', musicInBrowserHandler);
         $('#yhBtn').click(e => {
             $('#yhBtn').hide()
